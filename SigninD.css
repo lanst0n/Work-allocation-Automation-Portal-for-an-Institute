@@ -1,0 +1,25 @@
+body {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logbox {
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: #0B0921;
+    border-radius: 20px;
+}
+
+.taable {
+    align-items: center;
+}
+
+.taable tr td {
+    color: #ffffff;
+    text-align: center;
+    padding-left: 60px;
+}

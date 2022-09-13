@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Admin Page 2</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        .taable {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #form {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>View and Add Courses</h1>
+    <button id="btnadd" type="button" onclick="demoAdd()"><a href="#"><b>Add Course</b></a></button>
+    <br><br>
+    <form id="form">
+        <div class="taable">
+            <table>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Lecture Hours</th>
+                    <th>Tutorial Hours</th>
+                    <th>Practical Hours</th>
+                    <th>J-Component Hours</th>
+                    <th>Credits</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="ccode" name="ccode" placeholder="Enter Code" /></td>
+                    <td><input type="text" id="cname" name="cname" placeholder="Enter Name" /></td>
+                    <td><input type="number" id="lhour" name="lhour" placeholder="Enter Hours" /></td>
+                    <td><input type="number" id="thour" name="thour" placeholder="Enter Hours" /></td>
+                    <td><input type="number" id="phour" name="phour" placeholder="Enter Hours" /></td>
+                    <td><input type="number" id="jhour" name="jhour" placeholder="Enter Hours" /></td>
+                    <td><input type="number" id="cred" name="cred" placeholder="Enter Hours" /></td>
+                </tr>
+                <br>
+            </table>
+        </div>
+    </form>
+    <br>
+    <button id="btnenter" type="button" onclick="demoRem()"><a href="#"><b>Submit</b></a></button>
+    <button id="btnrem" type="button" onclick="demoRem()"><a href="#"><b>Remove</b></a></button>
+    <script>
+        function demoRem() {
+            document.getElementById("form").style.display = "none";
+        }
+
+        function demoAdd() {
+            document.getElementById("form").style.visibility = "visible";
+        }
+    </script>
+</body>
+
+</html>
